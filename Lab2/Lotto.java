@@ -18,6 +18,7 @@ public class Lotto
         }
 
         System.out.println(liczby);
+        System.out.println(liczby);
     }
 }
 
