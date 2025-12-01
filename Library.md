@@ -220,4 +220,134 @@ deactivate UI
 @enduml
 ```
 
+Opisuje kolejnye sekwencje dla wszystkich przypadków użycia. Może to prowadzić do zapełnienia pliku readme (staje się mało czytelny). Można zastosować nieco inne podejście:
+
+## 1. Diagram Sekwencji: Cykl życia wypożyczenia (Czytelnik)
+
+Ten diagram łączy: Wyszukiwanie, Wypożyczenie i Zwrot w jeden logiczny ciąg z użyciem bloku alt
+
+```plantuml
+@startuml
+title Proces Obsługi Czytelnika (Wyszukiwanie / Wypożyczenie / Zwrot)
+actor "Czytelnik" as User
+participant "Interfejs" as UI
+participant "LibraryManager" as Mgr
+participant "Book" as Bk
+participant "Loan" as Ln
+
+User -> UI: Wybór akcji
+activate UI
+
+alt Scenariusz: Wypożyczenie Książki
+    User -> UI: szukaj("Wiedźmin")
+    UI -> Mgr: findBook("Wiedźmin")
+    activate Mgr
+    Mgr -> Bk: getStatus()
+    activate Bk
+    Bk --> Mgr: AVAILABLE
+    deactivate Bk
+    Mgr --> UI: Zwróć detale książki
+    deactivate Mgr
+    
+    User -> UI: wypożycz(Ksiazka)
+    UI -> Mgr: processLoan(User, Book)
+    activate Mgr
+    Mgr -> Bk: setStatus(LOANED)
+    activate Bk
+    deactivate Bk
+    Mgr -> Ln: create(User, Book)
+    activate Ln
+    Ln --> Mgr: LoanID
+    deactivate Ln
+    Mgr --> UI: Sukces
+    deactivate Mgr
+    UI --> User: Potwierdzenie wypożyczenia
+
+else Scenariusz: Zwrot Książki
+    User -> UI: zwróć(Ksiazka)
+    UI -> Mgr: returnBook(User, Book)
+    activate Mgr
+    Mgr -> Ln: markAsReturned()
+    activate Ln
+    Ln -> Ln: calculateFine()
+    Ln --> Mgr: fineAmount (0.0)
+    deactivate Ln
+    Mgr -> Bk: setStatus(AVAILABLE)
+    activate Bk
+    deactivate Bk
+    Mgr --> UI: Zwrot przyjęty
+    deactivate Mgr
+    UI --> User: Potwierdzenie zwrotu
+end
+
+deactivate UI
+@enduml
+```
+
+## 2. Diagram Sekwencji: Operacje Administracyjne i Zarządcze
+
+Ten diagram optymalizuje procesy Bibliotekarza (zarządzanie zasobami) i Administratora (zarządzanie ludźmi) na jednym widoku, pokazując, że LibraryManager jest centralnym punktem sterowania.
+
+```plantuml
+@startuml
+title Operacje Zarządcze (Admin / Bibliotekarz)
+actor "Administrator" as Admin
+actor "Bibliotekarz" as Lib
+participant "LibraryInterface" as UI
+participant "LibraryManager" as Mgr
+participant "UserRegistry" as UR
+participant "Inventory" as Inv
+
+note over Admin, Lib: Użytkownik musi być zalogowany z odpowiednią rolą
+
+alt Przypadek: Zarządzanie Użytkownikami (Admin)
+    Admin -> UI: registerUser("Jan Kowalski", Rola)
+    activate UI
+    UI -> Mgr: createUser(Dane, Rola)
+    activate Mgr
+    Mgr -> UR: addNew(UserObject)
+    activate UR
+    UR --> Mgr: UserID
+    deactivate UR
+    Mgr --> UI: Potwierdzenie
+    deactivate Mgr
+    UI --> Admin: Użytkownik dodany
+
+    else Blokada Użytkownika
+    Admin -> UI: blockUser(UserID)
+    activate UI
+    UI -> Mgr: setUserStatus(UserID, BLOCKED)
+    activate Mgr
+    Mgr -> UR: updateStatus(UserID, BLOCKED)
+    Mgr --> UI: Sukces
+    deactivate Mgr
+    UI --> Admin: Konto zablokowane
+    deactivate UI
+
+else Przypadek: Zarządzanie Księgozbiorem (Bibliotekarz)
+    Lib -> UI: addBook(ISBN, Tytuł)
+    activate UI
+    UI -> Mgr: addNewBook(ISBN, ...)
+    activate Mgr
+    Mgr -> Inv: add(BookObject)
+    activate Inv
+    Inv --> Mgr: Success
+    deactivate Inv
+    Mgr --> UI: Książka w systemie
+    deactivate Mgr
+    UI --> Lib: Potwierdzenie dodania
+
+    else Usunięcie Książki
+    Lib -> UI: removeBook(BookID)
+    activate UI
+    UI -> Mgr: deleteBook(BookID)
+    activate Mgr
+    Mgr -> Inv: remove(BookID)
+    Mgr --> UI: Usunięto
+    deactivate Mgr
+    UI --> Lib: Książka usunięta z bazy
+    deactivate UI
+end
+@enduml
+```
 
