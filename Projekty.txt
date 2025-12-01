@@ -51,7 +51,7 @@ Kategoria C: Gry i Rozrywka (Najciekawsze na Diagramy Sekwencji)
 21) Gra RPG (Turowa Arena): Walka drużyny bohaterów (różne klasy: Mag, Wojownik) z potworami z systemem ekwipunku i statystyk.
 
 22) Gra Karciana (Blackjack/Poker): Tasowanie talii, rozdawanie, logika rąk, licytacja i obsługa żetonów graczy.
-
+Mateusz Maślanka, Piotr Kolenda
 23) System Rezerwacji Biletów Kinowych: Wybór filmu, sali, konkretnych miejsc na planie i obsługa różnych typów biletów.
 
 24) Wirtualny Portfel Inwestycyjny: Symulator giełdy, kupno/sprzedaż akcji, historia transakcji i wyliczanie zysku/straty.
