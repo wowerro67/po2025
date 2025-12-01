@@ -72,8 +72,8 @@ Mateusz Maślanka, Piotr Kolenda
 
 Kategoria D: Propozycje własne studentów.
 
-31) 
-
+31) PDF Kreator: serwer, klient (+UI), konsola, baza danych: Generowanie pdfów na podstawie danych użytkownika(?), sugestie wyboru pracy i ścieżki dokształcania
+Kacper Rosner, Filip Trzciński
 32)
 
 33) 
