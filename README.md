@@ -7,6 +7,7 @@ Proszę wpisywać się do pliku Projekty.txt przy temacie projektów lub wpisać
 ### Termin oddania (push do repo) projektu - 27.01.2026
 ### Termin oddania (push do repo) projektu laboratoryjnego -  27.01.2026
 
+Diagramy UML można rysować w dowolnym programie. W poniższym przykładzie wykorzystany jest język PlantUML i włączony Plugin Mozille (w przeglądarce) Markdown Diagrams.
 
 
 Projekt laboratoryjny Samochod (symulacja) - GUI
