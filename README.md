@@ -13,6 +13,10 @@ Diagramy UML można rysować w dowolnym programie. W poniższym przykładzie wyk
 Projekt laboratoryjny Samochod (symulacja) - GUI
 ===============================================
 
+Scene Builder - aplikacja zewnętrzna:
+https://www.oracle.com/java/technologies/javafxscenebuilder-1x-archive-downloads.html
+
+
 Diagramy UML
 ------------
 
