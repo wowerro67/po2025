@@ -3,9 +3,9 @@ Repozytorium dla przedmiotu Programowanie Obiektowe.
 
 Proszę wpisywać się do pliku Projekty.txt przy temacie projektów lub wpisać propozycję swojego tematu. W przypadku edycji pliku Projekty.txt konieczne jest utworzenie Pool Requestu (PR) - Create Pool Request. Wówczas zmiany pokażą się w repo po ich zatwierdzeniu przeze mnie.
 
-# Termin deklaracji projektu - 15.12.2025
-# Termin oddania (push do repo) projektu - 27.01.2026
-# Termin oddania (push do repo) projektu laboratoryjnego -  27.01.2026
+### Termin deklaracji projektu - 15.12.2025
+### Termin oddania (push do repo) projektu - 27.01.2026
+### Termin oddania (push do repo) projektu laboratoryjnego -  27.01.2026
 
 
 
