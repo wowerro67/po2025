@@ -5,6 +5,7 @@ Tematy projektów:
 Kategoria A: Symulacje i Systemy "Smart" (Wysoki potencjał na polimorfizm)
 
 1) Smart Home: Symulator centrali sterującej urządzeniami IoT (światło, rolety, czujniki) z obsługą scenariuszy i harmonogramów.
+Antoni Pietraszewski Piotr Kurbiel
 
 2) System Windy w Wieżowcu: Algorytm sterujący grupą 3 wind obsługujących 20 pięter z priorytetyzacją wezwań.
 
