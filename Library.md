@@ -187,3 +187,37 @@ UI --> Czytelnik: "Książka wypożyczona pomyślnie"
 deactivate UI
 @enduml
 ```
+
+### Scenariusz 2: Dodanie nowej książki (Bibliotekarz)
+
+Sekwencja przedstawia proces dodawania nowej pozycji do inwentarza przez pracownika.
+```plantuml
+@startuml
+actor Bibliotekarz
+participant "LibraryInterface" as UI
+participant "LibraryManager" as Mgr
+participant "Book" as Bk
+
+Bibliotekarz -> UI: inputBookData("ISBN-123", "Tytuł", "Autor")
+activate UI
+
+UI -> Mgr: addNewBook("ISBN-123", "Tytuł", "Autor")
+activate Mgr
+
+Mgr -> Bk: new Book("ISBN-123", "Tytuł", "Autor")
+activate Bk
+Bk --> Mgr: bookInstance
+deactivate Bk
+
+Mgr -> Mgr: inventory.add(bookInstance)
+note right: Dodanie do wewnętrznej listy
+
+Mgr --> UI: success
+deactivate Mgr
+
+UI --> Bibliotekarz: "Książka dodana do bazy"
+deactivate UI
+@enduml
+```
+
+
