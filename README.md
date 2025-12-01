@@ -68,6 +68,7 @@ UC_SetTarget ..> UC_Drive : <<include>>
 note right of UC_Drive : Wątek (Thread)\naktualizuje pozycję\n(Lab 10)
 
 @enduml
+```
 
 ### Diagram klas
 
