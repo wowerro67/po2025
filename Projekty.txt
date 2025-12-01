@@ -41,6 +41,7 @@ Kategoria B: Usługi i Zarządzanie (Idealne na Diagramy Przypadków Użycia)
 17) System Dziekanatu / e-Dziennik: Zarządzanie studentami, przedmiotami, ocenami, stypendiami i planem zajęć.
 
 18) Zarządzanie Magazynem Hurtowni: Przyjęcia towaru, wydania, inwentaryzacja, ostrzeganie o niskim stanie i lokalizacja na półkach.
+Arkadiusz Kępa, Kamil Ciask
 
 19) System Kasowy (POS) w Sklepie: Skanowanie produktów, rabaty, różne metody płatności, drukowanie paragonów i zwroty.
 
