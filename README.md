@@ -31,6 +31,9 @@ package "Aplikacja Symulator Samochodu" {
         usecase "Zmiana biegu" as UC_Gear
         usecase "Zwiększenie biegu" as UC_GearUp
         usecase "Zmniejszenie biegu" as UC_GearDown
+        usecase "Zmiana prędkości" as UC_Speed
+        usecase "Przyspieszanie" as UC_SpeedUp
+        usecase "Zwalnianie/hamowanie" as UC_SpeedDown
         usecase "Operowanie sprzęgłem" as UC_Clutch
         usecase "Wciśnięcie sprzęgła" as UC_ClutchPress
         usecase "Zwolnienie sprzęgła" as UC_ClutchRelease
@@ -49,6 +52,7 @@ User --> UC_Add
 User --> UC_Remove
 User --> UC_Engine
 User --> UC_Gear
+User --> UC_Speed
 User --> UC_Clutch
 User --> UC_SetTarget
 User --> UC_View
@@ -59,6 +63,9 @@ note right of UC_InputData : Walidacja formularza\n(Lab 9)
 
 UC_Gear <|-- UC_GearUp
 UC_Gear <|-- UC_GearDown
+
+UC_Speed <|-- UC_SpeedUp
+UC_Speed <|-- UC_SpeedDown
 
 UC_Clutch <|-- UC_ClutchPress
 UC_Clutch <|-- UC_ClutchRelease
