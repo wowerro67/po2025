@@ -55,7 +55,7 @@ Kategoria C: Gry i Rozrywka (Najciekawsze na Diagramy Sekwencji)
 23) System Rezerwacji Biletów Kinowych: Wybór filmu, sali, konkretnych miejsc na planie i obsługa różnych typów biletów.
 
 24) Wirtualny Portfel Inwestycyjny: Symulator giełdy, kupno/sprzedaż akcji, historia transakcji i wyliczanie zysku/straty.
-
+    Aleksander Zach, Artur Kupiec
 25) Gra Strategiczna (Map Editor): Edytor mapy z różnymi typami terenu, jednostkami i budynkami (zapis/odczyt stanu).
 
 26) Quiz / Generator Egzaminów: Baza pytań różnych typów (jednokrotne, wielokrotne), losowanie zestawów i ocenianie wyników.
