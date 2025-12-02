@@ -62,7 +62,8 @@ Mateusz Maślanka, Piotr Kolenda
 
 26) Quiz / Generator Egzaminów: Baza pytań różnych typów (jednokrotne, wielokrotne), losowanie zestawów i ocenianie wyników.
 
-27) Gra Planszowa (np. Monopoly uproszczone): Plansza, pionki, rzuty kostką, kupowanie pól i obsługa bankructwa.
+27) Gra Planszowa (np. Monopoly uproszczone): Plansza, pionki, rzuty kostką, kupowanie pól i obsługa bankructwa.  
+    Arkadiusz Baran i Maciek Miłek
 
 28) System Turniejowy: Generowanie drabinki rozgrywek, wprowadzanie wyników meczów i wyłanianie zwycięzcy.
 
