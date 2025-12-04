@@ -63,7 +63,6 @@ Mateusz Maślanka, Piotr Kolenda
 26) Quiz / Generator Egzaminów: Baza pytań różnych typów (jednokrotne, wielokrotne), losowanie zestawów i ocenianie wyników.
 
 27) Gra Planszowa (np. Monopoly uproszczone): Plansza, pionki, rzuty kostką, kupowanie pól i obsługa bankructwa.  
-    Arkadiusz Baran i Maciek Miłek
 
 28) System Turniejowy: Generowanie drabinki rozgrywek, wprowadzanie wyników meczów i wyłanianie zwycięzcy.
 
@@ -75,7 +74,9 @@ Kategoria D: Propozycje własne studentów.
 
 31) PDF Kreator: serwer, klient (+UI), konsola, baza danych: Generowanie pdfów na podstawie danych użytkownika(?), sugestie wyboru pracy i ścieżki dokształcania
 Kacper Rosner, Filip Trzciński
-32)
+
+32) Gra planszowa (na podstawie Talisman): Implementacja mechaniki poruszania się po planszy, systemu losowych spotkań (karty Przygód, walka), zarządzania ekwipunkiem oraz unikalnych zdolności klas postaci. 
+Arkadiusz Baran, Maciek Miłek
 
 33) 
 
