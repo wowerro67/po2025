@@ -69,6 +69,7 @@ Mateusz Maślanka, Piotr Kolenda
 29) Wirtualny Tamagotchi: Opieka nad stworkiem (karmienie, zabawa, leczenie), który zmienia stan w czasie rzeczywistym.
 
 30) Komunikator Tekstowy (Chat): Obsługa użytkowników, wiadomości prywatnych, grupowych, statusów obecności i historii.
+Maciej Woźniak, Maciej Antosz
 
 Kategoria D: Propozycje własne studentów.
 
