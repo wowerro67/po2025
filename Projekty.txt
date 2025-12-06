@@ -62,13 +62,14 @@ Mateusz Maślanka, Piotr Kolenda
 
 26) Quiz / Generator Egzaminów: Baza pytań różnych typów (jednokrotne, wielokrotne), losowanie zestawów i ocenianie wyników.
 
-27) Gra Planszowa (np. Monopoly uproszczone): Plansza, pionki, rzuty kostką, kupowanie pól i obsługa bankructwa.
+27) Gra Planszowa (np. Monopoly uproszczone): Plansza, pionki, rzuty kostką, kupowanie pól i obsługa bankructwa.  
 
 28) System Turniejowy: Generowanie drabinki rozgrywek, wprowadzanie wyników meczów i wyłanianie zwycięzcy.
 
 29) Wirtualny Tamagotchi: Opieka nad stworkiem (karmienie, zabawa, leczenie), który zmienia stan w czasie rzeczywistym.
 
 30) Komunikator Tekstowy (Chat): Obsługa użytkowników, wiadomości prywatnych, grupowych, statusów obecności i historii.
+Maciej Woźniak, Maciej Antosz
 
 Kategoria D: Propozycje własne studentów.
 
@@ -77,9 +78,9 @@ Kacper Rosner, Filip Trzciński
 
 32) Plant Planner: Dodawanie roślin, symulacja ich wzrostu oraz prowadzenie notatek dotyczących podlewania, nawożenia i chorób, wraz z harmonogramem opieki. 
 Joanna Żupnik,Marcel Kuźma
+33) Gra planszowa (na podstawie Talisman): Implementacja mechaniki poruszania się po planszy, systemu losowych spotkań (karty Przygód, walka), zarządzania ekwipunkiem oraz unikalnych zdolności klas postaci. 
+Arkadiusz Baran, Maciek Miłek
 
-33) 
-
-34)
+34) 
 
 35)
