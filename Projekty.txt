@@ -76,11 +76,11 @@ Kategoria D: Propozycje własne studentów.
 31) PDF Kreator: serwer, klient (+UI), konsola, baza danych: Generowanie pdfów na podstawie danych użytkownika(?), sugestie wyboru pracy i ścieżki dokształcania
 Kacper Rosner, Filip Trzciński
 
-32) Gra planszowa (na podstawie Talisman): Implementacja mechaniki poruszania się po planszy, systemu losowych spotkań (karty Przygód, walka), zarządzania ekwipunkiem oraz unikalnych zdolności klas postaci. 
+32) Plant Planner: Dodawanie roślin, symulacja ich wzrostu oraz prowadzenie notatek dotyczących podlewania, nawożenia i chorób, wraz z harmonogramem opieki. 
+Joanna Żupnik,Marcel Kuźma
+33) Gra planszowa (na podstawie Talisman): Implementacja mechaniki poruszania się po planszy, systemu losowych spotkań (karty Przygód, walka), zarządzania ekwipunkiem oraz unikalnych zdolności klas postaci. 
 Arkadiusz Baran, Maciek Miłek
 
-33) 
-
-34)
+34) 
 
 35)
