@@ -8,6 +8,7 @@ Kategoria A: Symulacje i Systemy "Smart" (Wysoki potencjał na polimorfizm)
 Antoni Pietraszewski Piotr Kurbiel
 
 2) System Windy w Wieżowcu: Algorytm sterujący grupą 3 wind obsługujących 20 pięter z priorytetyzacją wezwań.
+Daniel Kędziora
 
 3) Inteligentne Skrzyżowanie: Symulacja ruchu drogowego z sygnalizacją świetlną adaptującą się do natężenia ruchu i pojazdów uprzywilejowanych.
 
