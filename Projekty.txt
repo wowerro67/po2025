@@ -86,4 +86,5 @@ Joanna Żupnik,Marcel Kuźma
 34) Gra planszowa (na podstawie Talisman): Implementacja mechaniki poruszania się po planszy, systemu losowych spotkań (karty Przygód, walka), zarządzania ekwipunkiem oraz unikalnych zdolności klas postaci. 
 Arkadiusz Baran, Maciek Miłek
 
-35)
+35) System Zarządzania Sprzętem Sieciowym Korporacji: Inwentaryzacja urządzeń (routery, switche, access pointy itp.), monitorowanie statusu (w użyciu/nie używane), rejestrowanie konfiguracji (podłączenia poszczególnych portów).
+Roch Głogowski, Antoni Janek
