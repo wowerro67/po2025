@@ -37,7 +37,7 @@ Kategoria B: Usługi i Zarządzanie (Idealne na Diagramy Przypadków Użycia)
 14) System Gabinetu Lekarskiego: Grafik wizyt, kartoteka pacjentów, przypisywanie lekarzy i generowanie recept.
 
 15) System Biblioteczny / Mediateka: Wypożyczanie książek/multimediów, naliczanie kar za przetrzymanie i rezerwacje online.
-
+Adam Minior Rafał Grund
 16) Aplikacja do Zamawiania Jedzenia: Obsługa restauracji, menu, koszyka klienta, statusu zamówienia i dostawcy.
 
 17) System Dziekanatu / e-Dziennik: Zarządzanie studentami, przedmiotami, ocenami, stypendiami i planem zajęć.
