@@ -29,7 +29,7 @@ Daniel Kędziora
 Kategoria B: Usługi i Zarządzanie (Idealne na Diagramy Przypadków Użycia)
 
 11) System Rezerwacji Hotelowej: Zarządzanie pokojami różnych typów, rezerwacjami, gośćmi i usługami dodatkowymi (SPA, posiłki).
-
+Filip Zając, Łukasz Skrzypek
 12) Wypożyczalnia Samochodów: Obsługa floty pojazdów, wynajmów, zwrotów, przeglądów technicznych i kar za uszkodzenia.
 
 13) System Obsługi Paczkomatów: Logistyka paczek, kurierów, skrytek o różnych gabarytach i kodów odbioru.
