@@ -83,8 +83,11 @@ Kacper Tomczyk, Michał Kania
 
 33) Plant Planner: Dodawanie roślin, symulacja ich wzrostu oraz prowadzenie notatek dotyczących podlewania, nawożenia i chorób, wraz z harmonogramem opieki. 
 Joanna Żupnik,Marcel Kuźma
-34) Gra planszowa (na podstawie Talisman): Implementacja mechaniki poruszania się po planszy, systemu losowych spotkań (karty Przygód, walka), zarządzania ekwipunkiem oraz unikalnych zdolności klas postaci. 
+
+34) Gra planszowa (na podstawie Talisman): Implementacja mechaniki poruszania się po planszy, systemu losowych spotkań (karty Przygód, walka), zarządzania ekwipunkiem oraz unikalnych zdolności klas postaci.
 Arkadiusz Baran, Maciek Miłek
 
 35) System Zarządzania Sprzętem Sieciowym Korporacji: Inwentaryzacja urządzeń (routery, switche, access pointy itp.), monitorowanie statusu (w użyciu/nie używane), rejestrowanie konfiguracji (podłączenia poszczególnych portów).
 Roch Głogowski, Antoni Janek
+
+36) Inteligentna spiżarka: spis jedzenia i produktów w spiżarce, książka kucharska, sprawdzanie dostępnych przepisów na podstawie stanu spiżarki 
