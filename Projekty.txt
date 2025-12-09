@@ -41,7 +41,7 @@ Adam Minior Rafał Grund
 16) Aplikacja do Zamawiania Jedzenia: Obsługa restauracji, menu, koszyka klienta, statusu zamówienia i dostawcy.
 
 17) System Dziekanatu / e-Dziennik: Zarządzanie studentami, przedmiotami, ocenami, stypendiami i planem zajęć.
-
+Michał Firek, Maciej Babral
 18) Zarządzanie Magazynem Hurtowni: Przyjęcia towaru, wydania, inwentaryzacja, ostrzeganie o niskim stanie i lokalizacja na półkach.
 Arkadiusz Kępa, Kamil Ciask
 
