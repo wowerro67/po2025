@@ -91,3 +91,6 @@ Arkadiusz Baran, Maciek Miłek
 Roch Głogowski, Antoni Janek
 
 36) Inteligentna spiżarka: spis jedzenia i produktów w spiżarce, książka kucharska, sprawdzanie dostępnych przepisów na podstawie stanu spiżarki 
+
+37) Gra karciana (ala Blackjack, Poker): zasady, losowanie kart, punktacja, uczestnicy, ...
+Nikodem Bednarski, Wojciech Pietras
