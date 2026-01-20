@@ -28,7 +28,7 @@ public class Samochod extends Thread {
         this.ikonka = ikonka;
 
         this.silnik = new Silnik("V12", 300, 50000, 7000);
-        this.skrzynia = new SkrzyniaBiegow("Manual 6", 80, 5000, 6);
+        this.skrzynia = new SkrzyniaBiegow("Manualna", 80, 5000, 6);
 
         this.pozycja = new Pozycja(0,0);
         this.cel = new Pozycja(0,0);

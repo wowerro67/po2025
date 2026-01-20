@@ -15,7 +15,7 @@ public class SkrzyniaBiegow extends Komponent {
                 aktualnyBieg++;
                 System.out.println("Wrzucono bieg " + aktualnyBieg +".");
             } else {
-                System.out.println("TRRRRRRZRTZRTR");
+                System.out.println("ZGRZYT");
             }
         }
     }
@@ -26,7 +26,7 @@ public class SkrzyniaBiegow extends Komponent {
                 System.out.println("Redukcja do biegu " + aktualnyBieg +".");
             }
         } else {
-            System.out.println("TRRRRRRZRTZRTR");
+            System.out.println("ZGRZYT");
         }
     }
     public void luz(){
