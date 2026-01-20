@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- Główny kontener layoutu -->
+<BorderPane fx:controller="pl.wowo.samochod.HelloController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+
+    <!-- Pasek Menu na samej górze -->
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Plik">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Zamknij" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edycja">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Preferencje" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+
+    <!-- Lewa strona: Panele sterowania (Samochód, Skrzynia itd.) -->
+    <left>
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" prefWidth="250.0" BorderPane.alignment="CENTER">
+            <content>
+                <VBox spacing="5.0">
+                    <children>
+
+                        <!-- Panel: Samochód -->
+                        <TitledPane animated="false" text="Samochód">
+                            <content>
+                                <VBox spacing="10.0">
+                                    <children>
+                                        <GridPane hgap="5.0" vgap="5.0">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="80.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <Label text="Model" />
+                                                <TextField fx:id="carmodelTextField" GridPane.columnIndex="1" editable="false" />
+                                                <Label text="Nr rejestracyjny" GridPane.rowIndex="1" />
+                                                <TextField fx:id="carregistrationTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" editable="false" />
+                                                <Label text="Waga" GridPane.rowIndex="2" />
+                                                <TextField fx:id="carweightTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" editable="false"/>
+                                                <Label text="Prędkość" GridPane.rowIndex="3" />
+                                                <TextField fx:id="carspeedTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" editable="false" />
+                                            </children>
+                                        </GridPane>
+                                        <HBox alignment="CENTER" spacing="5.0">
+                                            <children>
+                                                <Button fx:id="startButton" mnemonicParsing="false" text="Włącz" onAction="#onStartButton" />
+                                                <Button fx:id="stopButton" mnemonicParsing="false" text="Wyłącz" onAction="#onStopButton" />
+
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </content>
+                        </TitledPane>
+
+                        <!-- Panel: Skrzynia Biegów -->
+                        <TitledPane animated="false" text="Skrzynia Biegów">
+                            <content>
+                                <VBox spacing="10.0">
+                                    <children>
+                                        <GridPane hgap="5.0" vgap="5.0">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="80.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <Label text="Nazwa" />
+                                                <TextField fx:id="gearboxnameTextField" GridPane.columnIndex="1" editable="false" />
+                                                <Label text="Cena" GridPane.rowIndex="1" />
+                                                <TextField fx:id="gearboxpriceTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" editable="false" />
+                                                <Label text="Waga" GridPane.rowIndex="2" />
+                                                <TextField fx:id="gearboxweightTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" editable="false" />
+                                                <Label text="Bieg" GridPane.rowIndex="3" />
+                                                <TextField fx:id="gearboxgearTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" editable="false" />
+                                            </children>
+                                        </GridPane>
+                                        <HBox alignment="CENTER" spacing="5.0">
+                                            <children>
+                                                <Button fx:id="shiftupButton" mnemonicParsing="false" text="Zwiększ bieg" onAction="#onShiftupButton"/>
+                                                <Button fx:id="shiftdownButton" mnemonicParsing="false" text="Zmniejsz bieg" onAction="#onShiftdownButton" />
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </content>
+                        </TitledPane>
+
+                        <!-- Panel: Silnik -->
+                        <TitledPane animated="false" text="Silnik">
+                            <content>
+                                <VBox spacing="10.0">
+                                    <children>
+                                        <GridPane hgap="5.0" vgap="5.0">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="80.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <Label text="Nazwa" />
+                                                <TextField fx:id="enginenameTextField" GridPane.columnIndex="1" editable="false" />
+                                                <Label text="Cena" GridPane.rowIndex="1" />
+                                                <TextField fx:id="enginepriceTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" editable="false" />
+                                                <Label text="Waga" GridPane.rowIndex="2" />
+                                                <TextField fx:id="engineweightTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" editable="false" />
+                                                <Label text="Obroty" GridPane.rowIndex="3" />
+                                                <TextField fx:id="enginerpmTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" editable="false" />
+                                            </children>
+                                        </GridPane>
+                                        <HBox alignment="CENTER" spacing="5.0">
+                                            <children>
+                                                <Button fx:id="accelerateButton" mnemonicParsing="false" text="Dodaj gazu" onAction="#onAccelerateButton"/>
+                                                <Button fx:id="deaccelerateButton" mnemonicParsing="false" text="Ujmij gazu" onAction="#onDeaccelerateButton" />
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </content>
+                        </TitledPane>
+
+                        <!-- Panel: Sprzęgło -->
+                        <TitledPane animated="false" text="Sprzęgło">
+                            <content>
+                                <VBox spacing="10.0">
+                                    <children>
+                                        <GridPane hgap="5.0" vgap="5.0">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="80.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <Label text="Nazwa" />
+                                                <TextField fx:id="clutchnameTextField" GridPane.columnIndex="1" editable="false" />
+                                                <Label text="Cena" GridPane.rowIndex="1" />
+                                                <TextField fx:id="clutchpriceTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" editable="false" />
+                                                <Label text="Waga" GridPane.rowIndex="2" />
+                                                <TextField fx:id="clutchweightTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" editable="false" />
+                                                <Label text="Stan" GridPane.rowIndex="3" />
+                                                <TextField fx:id="clutchstateTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" editable="false" />
+                                            </children>
+                                        </GridPane>
+                                        <HBox alignment="CENTER" spacing="5.0">
+                                            <children>
+                                                <Button fx:id="clutchengButton" mnemonicParsing="false" text="Naciśnij" onAction="#onClutchEngButton" />
+                                                <Button fx:id="clutchdngButton" mnemonicParsing="false" text="Zwolnij" onAction="#onClutchDngButton"/>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </content>
+                        </TitledPane>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </left>
+
+    <!-- Środek: Pasek narzędziowy + Mapa -->
+    <center>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+
+            <!-- Pasek narzędzi nad mapą -->
+            <top>
+                <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #e0e0e0; -fx-border-color: #c0c0c0;">
+                    <padding>
+                        <Insets left="10.0" right="10.0" />
+                    </padding>
+                    <children>
+                        <Label text="Samochód:" />
+                        <ComboBox fx:id="carComboBox" prefWidth="150.0" onAction="#onCarComboBoxButton" />
+                        <Button fx:id="addcarButton" mnemonicParsing="false" text="Dodaj nowy" onAction="#onAddCarButton" />
+                        <Button fx:id="rmcarButton" mnemonicParsing="false" text="Usuń" onAction="#onRmCarButton" />
+                    </children>
+                </HBox>
+            </top>
+
+            <!-- Główny obszar mapy -->
+            <center>
+                <AnchorPane fx:id="mapPane" onMouseClicked="#onMap" style="-fx-background-color: lightgreen;" BorderPane.alignment="CENTER">
+
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </center>
+</BorderPane>

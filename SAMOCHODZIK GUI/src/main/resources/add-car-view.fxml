@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- ZMIEŃ PAKIET KONTROLERA! -->
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pl.wowo.samochod.AddCarController"
+      prefWidth="400.0" prefHeight="550.0">
+
+    <padding><Insets top="15" right="15" bottom="15" left="15"/></padding>
+
+    <Label text="Kreator Samochodu" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <!-- Sekcja Główna (zawsze widoczna) -->
+    <GridPane hgap="10" vgap="10">
+        <children>
+            <Label text="Model:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="modelField" promptText="np. Ferrari 812" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Nr Rejestracyjny:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="plateField" promptText="np. KR 12345" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        </children>
+        <columnConstraints>
+            <ColumnConstraints minWidth="100"/>
+            <ColumnConstraints hgrow="ALWAYS"/>
+        </columnConstraints>
+    </GridPane>
+
+    <!-- Zwijane panele w ScrollPane (gdyby okno było za małe) -->
+    <ScrollPane fitToWidth="true" style="-fx-background-color: transparent;">
+        <content>
+            <VBox spacing="5.0">
+                <children>
+
+                    <!-- 1. SILNIK -->
+                    <TitledPane text="Silnik" animated="true" expanded="false">
+                        <content>
+                            <GridPane hgap="10" vgap="10">
+                                <children>
+                                    <Label text="Nazwa:" GridPane.rowIndex="0"/>
+                                    <TextField fx:id="engineNameField" text="V12" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                                    <Label text="Waga (kg):" GridPane.rowIndex="1"/>
+                                    <TextField fx:id="engineWeightField" text="1500" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                                    <Label text="Cena:" GridPane.rowIndex="2"/>
+                                    <TextField fx:id="enginePriceField" text="1500000" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                                    <Label text="Max Obroty:" GridPane.rowIndex="3"/>
+                                    <TextField fx:id="engineMaxRpmField" text="10000" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+                                </children>
+                            </GridPane>
+                        </content>
+                    </TitledPane>
+
+                    <!-- 2. SKRZYNIA BIEGÓW -->
+                    <TitledPane text="Skrzynia Biegów" animated="true" expanded="false">
+                        <content>
+                            <GridPane hgap="10" vgap="10">
+                                <children>
+                                    <Label text="Nazwa:" GridPane.rowIndex="0"/>
+                                    <TextField fx:id="gearboxNameField" text="Manualna 6" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                                    <Label text="Ilość biegów:" GridPane.rowIndex="1"/>
+                                    <TextField fx:id="gearboxCountField" text="6" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                                    <Label text="Waga:" GridPane.rowIndex="2"/>
+                                    <TextField fx:id="gearboxWeightField" text="100" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                                    <Label text="Cena:" GridPane.rowIndex="3"/>
+                                    <TextField fx:id="gearboxPriceField" text="5000" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+                                </children>
+                            </GridPane>
+                        </content>
+                    </TitledPane>
+
+                    <!-- 3. SPRZĘGŁO -->
+                    <TitledPane text="Sprzęgło" animated="true" expanded="false">
+                        <content>
+                            <GridPane hgap="10" vgap="10">
+                                <children>
+                                    <Label text="Nazwa:" GridPane.rowIndex="0"/>
+                                    <TextField fx:id="clutchNameField" text="Sprzęgło Sport" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                                    <Label text="Waga:" GridPane.rowIndex="1"/>
+                                    <TextField fx:id="clutchWeightField" text="15" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                                    <Label text="Cena:" GridPane.rowIndex="2"/>
+                                    <TextField fx:id="clutchPriceField" text="1500" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                                </children>
+                            </GridPane>
+                        </content>
+                    </TitledPane>
+
+                </children>
+            </VBox>
+        </content>
+    </ScrollPane>
+
+    <!-- Przyciski na dole -->
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button text="Anuluj" onAction="#onCancel" minWidth="80"/>
+        <Button text="Dodaj Auto" onAction="#onAdd" minWidth="100" style="-fx-base: lightgreen;"/>
+    </HBox>
+
+</VBox>
